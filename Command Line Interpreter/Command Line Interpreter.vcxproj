@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4f6df443-249d-4ee9-a088-22658b489e50}</ProjectGuid>
+    <RootNamespace>CommandLineInterpreter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;SHOWINCLUDES=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommandLine\CommandLine.cpp" />
+    <ClCompile Include="Commands\Batch.cpp" />
+    <ClCompile Include="Commands\Command.cpp" />
+    <ClCompile Include="Commands\Date.cpp" />
+    <ClCompile Include="Commands\Echo.cpp" />
+    <ClCompile Include="Commands\Head.cpp" />
+    <ClCompile Include="Commands\Prompt.cpp" />
+    <ClCompile Include="Commands\Remove.cpp" />
+    <ClCompile Include="Commands\Time.cpp" />
+    <ClCompile Include="Commands\Touch.cpp" />
+    <ClCompile Include="Commands\Tr.cpp" />
+    <ClCompile Include="Commands\Truncate.cpp" />
+    <ClCompile Include="Commands\WordCount.cpp" />
+    <ClCompile Include="Exceptions\FileError.cpp" />
+    <ClCompile Include="Exceptions\LexicalError.cpp" />
+    <ClCompile Include="Exceptions\SyntaxError.cpp" />
+    <ClCompile Include="Exceptions\UnknownCommandError.cpp" />
+    <ClCompile Include="Lexer\Lexer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Stream\ConsoleStream.cpp" />
+    <ClCompile Include="Stream\InputFileStream.cpp" />
+    <ClCompile Include="Stream\OutputFileStream.cpp" />
+    <ClCompile Include="Visitors\VisitBatch.cpp" />
+    <ClCompile Include="Visitors\VisitCommandLine.cpp" />
+    <ClCompile Include="Visitors\VisitDate.cpp" />
+    <ClCompile Include="Visitors\VisitEcho.cpp" />
+    <ClCompile Include="Visitors\VisitHead.cpp" />
+    <ClCompile Include="Visitors\VisitPrompt.cpp" />
+    <ClCompile Include="Visitors\VisitRemove.cpp" />
+    <ClCompile Include="Visitors\VisitTime.cpp" />
+    <ClCompile Include="Visitors\VisitTouch.cpp" />
+    <ClCompile Include="Visitors\VisitTr.cpp" />
+    <ClCompile Include="Visitors\VisitTruncate.cpp" />
+    <ClCompile Include="Visitors\VisitWordCount.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandLine\CommandLine.h" />
+    <ClInclude Include="Commands\Batch.h" />
+    <ClInclude Include="Commands\Command.h" />
+    <ClInclude Include="Commands\Commands.h" />
+    <ClInclude Include="Commands\Date.h" />
+    <ClInclude Include="Commands\Echo.h" />
+    <ClInclude Include="Commands\Head.h" />
+    <ClInclude Include="Commands\Prompt.h" />
+    <ClInclude Include="Commands\Remove.h" />
+    <ClInclude Include="Commands\Time.h" />
+    <ClInclude Include="Commands\Touch.h" />
+    <ClInclude Include="Commands\Tr.h" />
+    <ClInclude Include="Commands\Truncate.h" />
+    <ClInclude Include="Commands\WordCount.h" />
+    <ClInclude Include="Exceptions\ErrorCommand.h" />
+    <ClInclude Include="Exceptions\ErrorCommandLine.h" />
+    <ClInclude Include="Exceptions\ErrorLine.h" />
+    <ClInclude Include="Exceptions\ErrorMessage.h" />
+    <ClInclude Include="Exceptions\Exceptions.h" />
+    <ClInclude Include="Exceptions\FileError.h" />
+    <ClInclude Include="Exceptions\LexicalError.h" />
+    <ClInclude Include="Exceptions\SyntaxError.h" />
+    <ClInclude Include="Exceptions\UnknownCommandError.h" />
+    <ClInclude Include="Lexer\Lexer.h" />
+    <ClInclude Include="Stream\ConsoleStream.h" />
+    <ClInclude Include="Stream\FileStream.h" />
+    <ClInclude Include="Stream\InputFileStream.h" />
+    <ClInclude Include="Stream\OutputFileStream.h" />
+    <ClInclude Include="Stream\Stream.h" />
+    <ClInclude Include="Visitors\VisitBatch.h" />
+    <ClInclude Include="Visitors\VisitCommand.h" />
+    <ClInclude Include="Visitors\VisitCommandLine.h" />
+    <ClInclude Include="Visitors\VisitDate.h" />
+    <ClInclude Include="Visitors\VisitEcho.h" />
+    <ClInclude Include="Visitors\VisitHead.h" />
+    <ClInclude Include="Visitors\Visitor.h" />
+    <ClInclude Include="Visitors\VisitPrompt.h" />
+    <ClInclude Include="Visitors\VisitRemove.h" />
+    <ClInclude Include="Visitors\VisitTouch.h" />
+    <ClInclude Include="Visitors\VisitTr.h" />
+    <ClInclude Include="Visitors\VisitTruncate.h" />
+    <ClInclude Include="Visitors\VisitWordCount.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

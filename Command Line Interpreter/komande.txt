@@ -1,0 +1,4 @@
+echo "kkkkk
+wc -c "input.txt"
+touch out.txt
+echo "mudja cigan" | tr "cigan" >> out.txt
